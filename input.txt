@@ -1,0 +1,11 @@
+#include <iostream>
+
+int main() {
+    int x, y, z;
+    std::cout << "Enter two numbers: ";
+    std::cin >> x >> y;
+    sum = x + y;
+    sub = x - y
+    cout << "The sum of " << num1 << " and " << num2 << " is " << sum << "." << endl;
+    return 0 ;
+}
