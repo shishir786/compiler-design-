@@ -32,23 +32,6 @@ int readWordsFromFile(string filename, string words[])
     return i;
 }
 
-bool isNumber(string str) {
-    for (int i = 0; i < str.length(); i++) {
-        if (!isdigit(str[i])) {
-            return false;
-        }
-    }
-    return true;
-}
-
-bool starts_with_double_quotes(std::string str) {
-    if (str[0] == '\"') {
-        return true;
-    } else {
-        return false;
-    }
-}
-
 void check(string input[]){
     cout << "\nTokens read from file: " << endl;
         for (int j = 0; j < i; j++)
@@ -80,6 +63,23 @@ void check(string input[]){
             }
         }
 }
+
+bool isNumber(string str) {
+    for (int i = 0; i < str.length(); i++) {
+        if (!isdigit(str[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+bool starts_with_double_quotes(string str) {
+    if (str[0] == '\"') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 void print(){
     cout <<"Identifiers :";
