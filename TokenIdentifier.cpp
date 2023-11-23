@@ -115,7 +115,7 @@ void print(){
 
 int main()
 {
-    cout << "give the file name to read : " ;
+    cout << "give the file name to read(txt) : " ;
     cin >> input;
     int numWords = readWordsFromFile(input, words);
 
